@@ -883,12 +883,17 @@
         color: #ff9f00;
     }
 
-    /* New Map Section Styling */
     .footer-map {
-        flex: 1 1 250px;
-        margin-right: 20px;
+        flex: 1 1 300px;
+        margin-bottom: 20px;
         text-align: center;
-        margin-bottom: 20px; /* Memberikan jarak bawah pada map */
+    }
+
+    .footer-map iframe {
+        width: 100%;
+        height: 200px;
+        border: 0;
+        border-radius: 10px;
     }
 
     /* News Article Section Styling */
@@ -917,33 +922,45 @@
         color: #ff9f00;
     }
 
-    @media (max-width: 768px) {
-        .footer-main {
-            flex-direction: column;
-            align-items: center;
-            gap: 20px; /* Menambahkan jarak antar elemen pada tampilan mobile */
-        }
-
-        .footer-company-info,
-        .footer-links,
-        .footer-support,
-        .footer-legal,
-        .footer-map,
-        .footer-news-article {
-            margin-right: 0;
-            margin-bottom: 20px;
-        }
-
-        .footer-newsletter form {
-            flex-direction: column;
-        }
-
-        .footer-newsletter input {
-            width: 100%;
-            margin-bottom: 10px;
-        }
-        
+@media (max-width: 768px) {
+    .footer-main {
+        flex-direction: column;
+        align-items: center;
+        text-align: center; /* Pusatkan teks di semua kolom */
     }
+
+    .footer-company-info,
+    .footer-links,
+    .footer-support,
+    .footer-legal,
+    .footer-map,
+    .footer-news-article,
+    .footer-logo {
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-newsletter form {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-newsletter input {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-text {
+        width: 100%;
+    }
+}
+
 </style>
 
 <!-- WhatsApp Floating Icon -->
